@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Enviar una trama</title>
+    <title>Analizar una trama</title>
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -12,7 +12,6 @@
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
     <script src="Javascript.js"></script> 
-    <title>The Materialize Selects Example</title>
     <meta name = "viewport" content = "width = device-width, initial-scale = 1">
     <link rel = "stylesheet"
       href = "https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -35,8 +34,9 @@
     <nav class=" teal">
       <div class = "container nav-wrapper">
         <div class = "col s12">
-          <a href = "index.html" class = "breadcrumb">     Home</a>
-          <a href = "Trama.php" class = "breadcrumb">Enviar una trama</a>
+          <a href = "index.html" class = "breadcrumb"> Home</a>
+          <a href = "Trama.php" class = "breadcrumb">Enviar Trama</a>
+          <a href = "Analizar.php" class = "breadcrumb">Analizar</a>
         </div>
       </div>
     </nav>
@@ -44,9 +44,9 @@
       <div class="section no-pad-bot">
         <div class="container">
           <br><br>
-          <h1 class="header center teal-text text-lighten-1">Enviar Trama</h1>
+          <h1 class="header center teal-text text-lighten-1">Analizar una Trama</h1>
           <div class="row center">
-            <h5 class="header col s12 light">En esta sección podrás ver la representacion real de la trama</h5>
+            <h5 class="header col s12 light">En esta sección podrás analizar una trama creada anteriormente por otro usuario. Copia y Pega la Trama que quieras visualizar.</h5>
           </div>
         </div>
       </div>
@@ -67,49 +67,19 @@
             <!--################################### Mensaje ################################################################-->
             <div class="row">
             	 <div class="input-field ">
-          		<input id="input_text" placeholder="Hola Mundo!" name="Mensaje" type="text" class="validate" maxlength="3000" length="3000">
-          		<label for="input_text">Mensaje</label>
+          		<input id="input_text" placeholder="Copia Trama!" name="Mensaje" type="text" class="validate" maxlength="500" length="500">
+          		<label for="input_text">Trama</label>
         	</div>
        		 </div>
             	
             <div class="row">
-          	<button class="btn-large waves-effect waves-light" type="submit" name="action">Enviar
+          	<button class="btn-large waves-effect waves-light" type="submit" name="action">Analizar
             <i class="material-icons right">send</i>
             </button>
           </div>
 
           </form>
-          
-        </div>
-      
-    </div>
-    <div class="parallax-container">
-      <div class="parallax"><img src="background1.jpg"></div>
-      <div class="container">
-        <div class = "row ">
-          <div class="col s12">
-            <p></p>
-          </div>
-         
-          </p>
-        </div>
-        <div class="col s12">
-          <p>
-          </p>
-        </div>
-        <div class="col s12">
-          <p></p>
-        </div>
-        <div class="col s12">
-          <p></p>
-        </div>
-        <div class="col s12">
-          <p></p>
-        </div>
-      </div>
-    </div>
-    </div>
-     <div class="container">
+           <div class="container">
     <div class="section">
 
       <!--   Icon Section   -->
@@ -118,7 +88,7 @@
             echo '<div class="col s12"><p>';
             
             echo "<table style='border: solid 1px black;'>";
-            echo "<tr><th>Trama</th></tr>";
+            echo "<tr><th>Tramas Creadas</th></tr>";
             
             class TableRows extends RecursiveIteratorIterator {
                 function __construct($it) {
@@ -187,6 +157,38 @@
       </div>
 
     </div>
+          
+        </div>
+      
+    </div>
+</div>
+    <div class="parallax-container">
+      <div class="parallax"><img src="background1.jpg"></div>
+      <div class="container">
+        <div class = "row ">
+          <div class="col s12">
+            <p></p>
+          </div>
+         
+          </p>
+        </div>
+        <div class="col s12">
+          <p>
+          </p>
+        </div>
+        <div class="col s12">
+          <p></p>
+        </div>
+        <div class="col s12">
+          <p></p>
+        </div>
+        <div class="col s12">
+          <p></p>
+        </div>
+      </div>
+    </div>
+    </div>
+    
   </div>
     <footer class="page-footer teal">
       <div class="container">
@@ -199,7 +201,8 @@
             <h5 class="white-text">Minimapa</h5>
             <ul>
               <li><a class="white-text" href="index.html">Home</a></li>
-              <li><a class="white-text" href="Trama.html">Envia Trama</a></li>
+              <li><a class="white-text" href="Trama.php">Envia Trama</a></li>
+              <li><a class="white-text" href="Analizar.php">Analizar Trama</a></li>
               <li><a class="white-text" href="Componentes.php">Conoce más</a></li>
             </ul>
           </div>

@@ -19,9 +19,9 @@ int main(int argc, char const *argv[]) {
         }
     }
 
-    for (int i = 0; i < NumberOfBytesToConvert; ++i) {
+   /* for (int i = 0; i < NumberOfBytesToConvert; ++i) {
         printf("Parameter %i is %hhu\n", i, BitsToArrayBytes[i]);
-    }
+    }*/
 
     return 0;
 }
